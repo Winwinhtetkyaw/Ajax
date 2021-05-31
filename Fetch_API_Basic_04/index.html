@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Basic</title>
+    <link rel="stylesheet" href="../bootstrap/node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../bootstrap/css/main.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand p-2">Fetch API Basics</a>
+    </nav>
+    <!-- button section -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-primary" id="text-btn">Text Data</button>
+                <button class="btn btn-warning" id="json-btn">Json Data</button>
+                <button class="btn btn-danger" id="api-btn">API Data</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- data section -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-4">
+               <div class="card border-0">
+                   <div class="card-header bg-primary text-white">
+                       <h3>Text Data</h3>
+                   </div>
+                   <div class="card-body bg-light" id="text-card"></div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 mt-3">
+                    <div class="card-header bg-warning text-white">
+                        <h3>Json Data</h3>
+                    </div>
+                    <div class="card-body bg-light" id="json-card"></div>
+                </div>
+             </div>
+
+             <div class="col-md-4">
+                <div class="card border-0 mt-3">
+                    <div class="card-header bg-danger text-white">
+                        <h3>API Data</h3>
+                    </div>
+                    <div class="card-body bg-light" id="api-card"></div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

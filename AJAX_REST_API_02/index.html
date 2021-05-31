@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax  with REST API</title>
+    <!-- <link rel="stylesheet" href="../bootstrap/css/main.css"> -->
+    <link rel="stylesheet" href="../bootstrap/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+   <nav class="navbar navbar-dark bg-dark">
+       <a href="#" class="navbar-brand">Ajax with REST API</a>
+   </nav> 
+
+   <!-- Button Section -->
+   <div class="container mt-3">
+       <div class="row">
+           <div class="col text-center">
+               <button class="btn btn-primary" id="get-btn">GET</button>
+               <button class="btn btn-warning" id="post-btn">POST</button>
+               <button class="btn btn-secondary" id="put-btn">PUT</button>
+               <button class="btn btn-danger" id="delete-btn">DELETE</button>
+           </div>
+       </div>
+   </div>
+   <!-- table section -->
+   <div class="container mt-3">
+       <div class="row">
+           <div class="col">
+               <table class="table table-hover text-center table-secondary table-striped">
+                   <thead>
+                      <tr class="table-danger">
+                          <th>EMP ID</th>
+                          <th>FIRST NAME</th>
+                          <th>LAST NAME</th>
+                          <th>EMAIL</th>
+                          <th>GENDER</th>
+                          <th>IP ADDRESS</th>
+                      </tr> 
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+   <!-- Bootstrap JS -->
+   <script src="../bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   <!-- Application JS file -->
+   <script type="module" src="app.js"></script>
+</body>
+</html>
